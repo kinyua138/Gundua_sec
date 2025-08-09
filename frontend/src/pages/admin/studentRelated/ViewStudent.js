@@ -72,9 +72,10 @@ const ViewStudent = () => {
         setSelectedSection(newSection);
     };
 
-    const fields = password === ""
-        ? { name, admissionNum }
-        : { name, admissionNum, password }
+    // This appears to be unused code - commenting out to fix ESLint error
+    // const fields = password === ""
+    //     ? { name, admissionNum }
+    //     : { name, admissionNum, password }
 
 useEffect(() => {
     if (userDetails) {
