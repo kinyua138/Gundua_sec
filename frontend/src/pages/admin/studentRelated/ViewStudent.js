@@ -42,8 +42,8 @@ const ViewStudent = () => {
     if (response) { console.log(response) }
     else if (error) { console.log(error) }
 
-const [name, setName] = useState('');
-const [admissionNum, setAdmissionNum] = useState('');
+    const [name, setName] = useState('');
+    const [admissionNum, setAdmissionNum] = useState('');
     const [sclassName, setSclassName] = useState('');
     const [studentSchool, setStudentSchool] = useState('');
     const [subjectMarks, setSubjectMarks] = useState('');
