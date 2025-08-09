@@ -9,7 +9,6 @@ import { LightPurpleButton } from '../components/buttonStyles';
 import styled from 'styled-components';
 import { loginUser } from '../redux/userRelated/userHandle';
 import Popup from '../components/Popup';
-import ForgotPasswordModal from '../components/ForgotPasswordModal';
 
 const defaultTheme = createTheme();
 
@@ -29,7 +28,6 @@ const LoginPage = ({ role }) => {
     const [passwordError, setPasswordError] = useState(false);
     const [admissionNumberError, setAdmissionNumberError] = useState(false);
     const [studentNameError, setStudentNameError] = useState(false);
-    const [showForgotPassword, setShowForgotPassword] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -204,7 +202,6 @@ const LoginPage = ({ role }) => {
                                 fullWidth
                                 variant="text"
                                 sx={{ mt: 1 }}
-                                onClick={() => setShowForgotPassword(true)}
                             >
                                 Forgot Password?
                             </Button>
